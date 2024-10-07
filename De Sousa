@@ -1,0 +1,10 @@
+int main() {
+
+    int idade;
+
+    printf ("qual e a sua idade");
+    scanf ("%d", "&idade");
+    printf ("%d", idade);
+
+    return 0;
+}
