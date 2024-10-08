@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+    int media;
+    printf("o aluno esta com o nota =");
+    scanf("%d", media);
+   if( media >= 7) {
+    printf("o aluno esta aprovado");
+   } else {
+    printf("o aluno esta reprovado");
+   } 
+   return 0;
+}
