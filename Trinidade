@@ -1,0 +1,45 @@
+#include <math.h>
+
+int main(void) {
+
+    int idadeGleydson;
+    int idadeFelipe;
+    int idadeAllex;
+ printf ("diga a idade de Gleydson = ");
+ scanf ("%d" , &idadeGleydson);
+
+printf ("diga a idade de Felipe= ");
+ scanf ("%d" , &idadeFelipe);
+
+ printf ("diga a idade de Allex= ");
+ scanf ("%d" , &idadeAllex);
+
+    if(idadeGleydson > idadeFelipe > idadeAllex){
+        printf("Gleydson mais velho que o Felipe e Felipe mais velho que o Allex");
+    }
+     if(idadeGleydson > idadeFelipe == idadeAllex){
+        printf("Gleydson mais velho que o Felipe e Felipe e Allex tem a mesma idade");
+    }
+    if(idadeGleydson > idadeFelipe < idadeAllex){
+        printf("Gleydson mais velho que o Felipe e Felipe mais novo que o Allex");
+    }
+     if(idadeGleydson < idadeFelipe < idadeAllex){
+        printf("Gleydson mais novo que o Felipe e Felipe mais novo que o Allex");
+    }
+     if(idadeGleydson < idadeFelipe > idadeAllex){
+        printf("Gleydson mais novo que o Felipe e Felipe mais velho que o Allex");
+    }
+     if(idadeGleydson < idadeFelipe == idadeAllex){
+        printf("Gleydson mais novo que o Felipe e Felipe e Allex tem a mesma idade");
+     }
+     if(idadeGleydson == idadeFelipe < idadeAllex){
+        printf("Gleydson e Felipe tem a mesma idade e Felipe e mais novo que o Allex");
+    }
+     if(idadeGleydson == idadeFelipe > idadeAllex){
+        printf("Gleydson e Felipe tem a mesma idade e Felipe mais velho que o Allex");
+    } else {
+        printf("Todos os primos tem a mesma idade");
+    }
+
+    return 0;
+}
