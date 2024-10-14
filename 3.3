@@ -1,0 +1,18 @@
+Passo: Analisar a idade do Nadador
+PAsso: Comparar a idade com as opções
+Passo: Se ele tiver a idade menor ou igual a 10, vai está na classificação Infantil
+Passo: Se ele tiver idade entre 11 e 17 anos, vai está no categoria Juvenil
+Passo: Se ele tiver idade acima á 17 anos, vai está na classificação Sênior
+
+#include <stdbool.h>
+
+int main(void) {
+    int idade=17;
+    if(idade <= 10) {
+        printf("O nadador estara no campeonato infatil");
+    } if(idade > 17) {
+        printf("O nadador vai esta na senior");
+    } else {
+        printf("estara na classificação juvenil");
+    }
+}
