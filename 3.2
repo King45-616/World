@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+  float maquinas = 100;
+  float defeituosas = 20;
+  float porcentagem = (defeituosas / maquinas) * 100;
+  printf("Porcentagem sera igual a %f", porcentagem);
+  if(porcentagem <= 10) {
+    printf(" nao precisa de conserto");
+  } else {
+    printf("precisa de conserto");
+  }
+  return 0;
+}
