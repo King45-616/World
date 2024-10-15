@@ -8,10 +8,14 @@ PAsso: Se for menor que 10%, não precisa de conserto
 #include <stdio.h>
 
 int main() {
-  float maquinas = 100;
-  float defeituosas = 20;
+  float maquinas;
+  float defeituosas;
+  printf("digite o total de maquinas: ");
+  scanf("%f", &maquinas);
+  printf("digite o total de maquinas defeituosas: ");
+  scanf("%f", &defeituosas);
   float porcentagem = (defeituosas / maquinas) * 100;
-  printf("Porcentagem sera igual a %f", porcentagem);
+  printf("Porcentagem sera igual a %f, ", porcentagem);
   if(porcentagem <= 10) {
     printf(" nao precisa de conserto");
   } else {
