@@ -7,7 +7,9 @@ Passo: Se ele tiver idade acima á 17 anos, vai está na classificação Sênior
 #include <stdbool.h>
 
 int main(void) {
-    int idade=17;
+    int idade;
+   printf("digite a idade do competidor: ");
+    scanf("%d", &idade);
     if(idade <= 10) {
         printf("O nadador estara no campeonato infatil");
     } if(idade > 17) {
