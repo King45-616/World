@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char estadocivil;
+
+    printf("Informe seu estado civil entre as opções S, C, D e V: ");
+    scanf(" %c", &estadocivil);
+    if (estadocivil == 'S') {
+        printf("Solteiro\n");
+    } 
+    if (estadocivil == 'C') {
+        printf("Casado\n");
+    } 
+    if (estadocivil == 'D') {
+        printf("Divorciado\n");
+    } 
+    if (estadocivil == 'V') {
+        printf("Viúvo\n");
+    } else {
+        printf("Opção inválida. Você não existe.\n");
+    }
+
+    return 0;
+}
