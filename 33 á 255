@@ -1,1 +1,12 @@
-djwjansh
+#include <stdio.h>
+int main(void)
+{
+  int f; 
+  
+  for(f = 33; f <= 255; f++)
+  {
+    printf("%d ", f);
+  }
+  
+  return 0;
+}
