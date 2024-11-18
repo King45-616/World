@@ -1,0 +1,22 @@
+#include <stdio.h> 
+
+int main(void) { 
+    
+float F, K, I, N, G;
+float media;
+printf("insira o numero total de alunos: ");
+scanf("%f", &F);
+
+printf("nota do aluno 1: ");
+scanf("%f", &K);
+printf("nota do aluno 2: ");
+scanf("%f", &I);
+printf("nota do aluno 3: ");
+scanf("%f", &N);
+printf("nota do aluno 4: ");
+scanf("%f", &G);
+ media = (K + I + N + G) / F;
+  
+  printf("Media dos alunos = %.1f\n",media);
+ return 0; 
+}
