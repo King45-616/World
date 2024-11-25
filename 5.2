@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int pacientes, idade, idade_maxima;
+
+    printf("Digite o número de pacientes: ");
+    scanf("%d", &pacientes);
+
+    idade_maxima = 0;
+
+
+    for (int C = 1; C <= pacientes; C++) {
+        printf("Digite a idade do paciente %d: ", C);
+        scanf("%d", &idade);
+
+        if (idade > idade_maxima) {
+            idade_maxima = idade;
+        }
+    }
+
+    printf("A idade do paciente mais idoso é: %d\n", idade_maxima);
+
+    return 0;
+}
