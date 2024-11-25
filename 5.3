@@ -1,0 +1,17 @@
+#include <stdio.h> 
+#include <math.h>
+int main() { 
+    float investimentos, juros, capital;
+    int c;
+    float motante;
+    printf("Qual o periodo de investimentos?");
+    scanf("%f", &investimentos);
+    printf("qual o Juros?");
+    scanf("%f", &juros);
+    printf("qual o capital inicial?");
+    scanf("%f", &capital);
+    for(c = 1; c <= investimentos; c++){
+        motante = capital * pow(((juros/100) + 1),c);
+    printf("mes %d: %.2f\n", c, motante);
+}
+}
