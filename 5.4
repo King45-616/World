@@ -1,0 +1,32 @@
+#include <stdio.h>  
+
+int main() {
+    int total_eleitores, votos_a = 0, votos_b = 0, votos_c = 0, votos_nulos = 0;
+    char voto;
+
+    printf("total de eleitores? ");
+    scanf("%d", &total_eleitores);
+
+    for (int i = 1; i <= total_eleitores; i++) {
+        printf("voto %d? ", i);
+        scanf(" %c", &voto); 
+
+        if (voto == 'A') {
+            votos_a++;
+        } else if (voto == 'B') {
+            votos_b++;
+        } else if (voto == 'C') {
+            votos_c++;
+        } else {
+            votos_nulos++;
+        }
+    }
+
+    printf("resultado:\n");
+    printf("A..................: %d\n", votos_a);
+    printf("B..................: %d\n", votos_b);
+    printf("C..................: %d\n", votos_c);
+    printf("nulos..............: %d\n", votos_nulos);
+
+    return 0;
+}
